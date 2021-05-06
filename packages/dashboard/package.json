@@ -1,0 +1,11 @@
+{
+  "name": "@chealt/dashboard",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "src/index.js",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "sideEffects": false
+}
