@@ -10,12 +10,13 @@
   },
   "sideEffects": false,
   "scripts": {
-    "start:dev": "web-dev-server --config ./config/web-dev-server.config.js"
+    "start:dev": "nodemon --inspect ./src/server/index.js"
   },
   "dependencies": {
-    "lit-element": "^3.0.0-rc.1"
+    "koa": "^2.13.1",
+    "lit": "^2.0.0-rc.1"
   },
   "devDependencies": {
-    "@web/dev-server": "^0.1.17"
+    "nodemon": "^2.0.7"
   }
 }
