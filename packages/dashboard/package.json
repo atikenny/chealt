@@ -2,10 +2,20 @@
   "name": "@chealt/dashboard",
   "version": "0.0.1",
   "license": "MIT",
+  "type": "module",
   "main": "src/index.js",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "scripts": {
+    "start:dev": "web-dev-server --config ./config/web-dev-server.config.js"
+  },
+  "dependencies": {
+    "lit-element": "^3.0.0-rc.1"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.1.17"
+  }
 }
