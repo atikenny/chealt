@@ -7,6 +7,7 @@ const shell = () => html`
   <html>
     <head>
       <title>Chealt Dashboard</title>
+      <link rel="stylesheet" href="/css/reset.css" />
     </head>
     <body>
       ${appRoot()}

@@ -16,6 +16,17 @@ const config = {
       parserOptions: {
         requireConfigFile: false
       }
+    },
+    {
+      files: ['packages/dashboard/config/**/*.js'],
+      rules: {
+        'import/no-extraneous-dependencies': [
+          'error',
+          {
+            devDependencies: true
+          }
+        ]
+      }
     }
   ]
 };
