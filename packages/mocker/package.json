@@ -1,6 +1,6 @@
 {
   "name": "@chealt/mocker",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "license": "MIT",
   "type": "module",
   "main": "src/index.js",
@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "express": "4.17.1",
-    "glob": "7.1.6",
+    "glob": "7.1.7",
     "winston": "3.3.3"
   },
   "devDependencies": {
