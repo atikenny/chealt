@@ -9,7 +9,8 @@
   },
   "homepage": "https://github.com/chealt/chealt#chealt",
   "scripts": {
-    "test": "JEST_PUPPETEER_CONFIG=./config/puppeteer/puppeteer.config.js jest --runInBand --config=./config/jest/jest.puppeteer.config.js"
+    "test": "JEST_PUPPETEER_CONFIG=./config/puppeteer/puppeteer.config.js jest --runInBand --config=./config/jest/jest.puppeteer.config.js",
+    "dev": "node ../mocker/server.js"
   },
   "dependencies": {
     "@chealt/jest-puppeteer-env": "4.0.10",

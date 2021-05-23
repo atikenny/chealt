@@ -1,3 +1,4 @@
+import path from 'path';
 import express from 'express';
 
 import { defaultConfig, validate } from './config.js';
@@ -14,8 +15,9 @@ const mockServer = async () => {
   validate(config);
 
   const app = express();
-
-  app.use(/\/$/u, (req, res) => res.send(''));
+  const dirName = import.meta.url.slice(7, import.meta.url.lastIndexOf('/'));
+  app.use(/\/$/u, (req, res) => res.sendFile(path.join(dirName, 'UI/index.html')));
+  app.use(express.static('UI'));
 
   const { MOCKS_FOLDER, MOCK_EXTENSION } = config;
   const mocksFolderAbsPath = getFolderAbsPath(MOCKS_FOLDER);
