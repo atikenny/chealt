@@ -17,7 +17,7 @@ const mockServer = async () => {
   const app = express();
   const dirName = import.meta.url.slice(7, import.meta.url.lastIndexOf('/'));
   app.use(/\/$/u, (req, res) => res.sendFile(path.join(dirName, 'UI/index.html')));
-  app.use(express.static('UI'));
+  app.use('/static', express.static(path.join(dirName, 'UI')));
 
   const { MOCKS_FOLDER, MOCK_EXTENSION } = config;
   const mocksFolderAbsPath = getFolderAbsPath(MOCKS_FOLDER);
