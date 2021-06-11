@@ -1,4 +1,5 @@
 import { useLocation } from 'preact-iso';
+import Link from './Link';
 
 const Header = () => {
   const { url } = useLocation();
@@ -6,9 +7,9 @@ const Header = () => {
   return (
     <header>
       <nav>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/error">Error</a>
+        <Link href="/">Home</Link>
+        <Link href="/about">About</Link>
+        <Link href="/error">Error</Link>
       </nav>
       <label>
         URL:
