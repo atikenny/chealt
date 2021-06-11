@@ -1,10 +1,12 @@
 const { bold, grey, inverse } = require('chalk');
 
-const filterByUrl = (collectCoverageFrom) => ({ url }) => {
-  const shouldCollectCoverage = collectCoverageFrom.some((urlRegex) => new RegExp(urlRegex, 'u').test(url));
+const filterByUrl =
+  (collectCoverageFrom) =>
+  ({ url }) => {
+    const shouldCollectCoverage = collectCoverageFrom.some((urlRegex) => new RegExp(urlRegex, 'u').test(url));
 
-  return shouldCollectCoverage;
-};
+    return shouldCollectCoverage;
+  };
 
 const removeCoverageText = (coverage) => {
   const mappedCoverage = {

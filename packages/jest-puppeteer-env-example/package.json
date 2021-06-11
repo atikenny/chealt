@@ -12,8 +12,8 @@
     "test": "JEST_PUPPETEER_CONFIG=./config/puppeteer/puppeteer.config.js jest --runInBand --config=./config/jest/jest.puppeteer.config.js"
   },
   "dependencies": {
-    "@chealt/jest-puppeteer-env": "4.0.8",
-    "puppeteer": "9.1.1"
+    "@chealt/jest-puppeteer-env": "4.1.1",
+    "puppeteer": "10.0.0"
   },
   "peerDependencies": {
     "jest": "^26.5.3"

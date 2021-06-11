@@ -1,6 +1,6 @@
 {
   "name": "@chealt/jest-puppeteer-env",
-  "version": "4.0.8",
+  "version": "4.1.1",
   "license": "MIT",
   "main": "index.js",
   "repository": {
@@ -10,15 +10,15 @@
   "homepage": "https://github.com/chealt/chealt#chealt",
   "scripts": {},
   "dependencies": {
-    "@axe-core/puppeteer": "4.1.1",
-    "@chealt/mocker": "1.0.4",
+    "@axe-core/puppeteer": "4.2.1",
+    "@chealt/mocker": "1.1.1",
     "bytes": "3.1.0",
     "chalk": "4.1.1",
     "cwd": "0.10.0",
-    "expect-puppeteer": "5.0.3",
-    "jest-circus": "26.6.3",
+    "expect-puppeteer": "5.0.4",
+    "jest-circus": "27.0.4",
     "jest-dev-server": "5.0.3",
-    "jest-environment-node": "26.6.2",
+    "jest-environment-node": "27.0.3",
     "merge-deep": "3.0.3"
   },
   "publishConfig": {
