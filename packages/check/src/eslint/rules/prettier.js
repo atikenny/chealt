@@ -1,4 +1,5 @@
 const config = {
+  indent: ['off'],
   'prettier/prettier': [
     'error',
     {

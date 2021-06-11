@@ -16,7 +16,7 @@
     "puppeteer": "10.0.0"
   },
   "peerDependencies": {
-    "jest": "^26.5.3"
+    "jest": "^27.0.4"
   },
   "publishConfig": {
     "access": "public"

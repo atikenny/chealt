@@ -1,5 +1,6 @@
 const javascriptRules = require('./rules/javascript');
 const importRules = require('./rules/import');
+const preactRules = require('./rules/preact');
 const prettierRules = require('./rules/prettier');
 
 const config = {
@@ -17,7 +18,8 @@ const config = {
   rules: {
     ...javascriptRules,
     ...importRules,
-    ...prettierRules
+    ...prettierRules,
+    ...preactRules
   },
   parserOptions: {
     ecmaVersion: 8,

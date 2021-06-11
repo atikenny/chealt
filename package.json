@@ -7,6 +7,7 @@
   },
   "scripts": {
     "check": "yarn lint:eslint",
+    "dashboard": "yarn workspace @chealt/dashboard run start",
     "lint:eslint": "eslint .",
     "test": "yarn workspace @chealt/jest-puppeteer-env-example run test",
     "test:unit": "yarn workspace @chealt/mocker run test:unit",
@@ -15,10 +16,6 @@
   "workspaces": {
     "packages": [
       "packages/*"
-    ],
-    "nohoist": [
-      "**/preact",
-      "**/preact-render-to-string"
     ]
   },
   "license": "MIT",
@@ -32,10 +29,11 @@
     "@babel/core": "^7.14.5",
     "@babel/eslint-parser": "^7.14.5",
     "@babel/preset-env": "^7.14.5",
-    "@chealt/check": "^0.3.1",
+    "@chealt/check": "^0.4.0",
     "babel-jest": "^27.0.2",
     "babel-plugin-transform-require-extensions": "^2.0.1",
     "eslint": "^7.28.0",
+    "eslint-config-preact": "^1.1.4",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-prettier": "^3.4.0",

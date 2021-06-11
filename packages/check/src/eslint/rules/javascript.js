@@ -14,7 +14,6 @@ const config = {
   'eol-last': ['error', 'always'],
   eqeqeq: ['error'],
   'func-style': ['error'],
-  indent: ['off'], // prefer prettier
   'import/newline-after-import': ['error'],
   'no-multiple-empty-lines': [
     'error',
