@@ -1,6 +1,10 @@
 :root {
 	--gutter-size: 8px;
 	--gutter-size--l: 16px;
+
+	/* COLORS */
+	--brand-color: hsl(32deg 82% 49%);
+	--brand-color--text: #120a02;
 }
 
 html,
@@ -12,7 +16,8 @@ body {
 
 header {
 	display: flex;
-	background: #ddd;
+	background: var(--brand-color);
+	box-shadow: 0 0 4px 0;
 }
 
 header > nav {
@@ -22,7 +27,7 @@ header > nav {
 
 header > nav a {
 	padding: var(--gutter-size--l);
-	color: #653b0a;
+	color: var(--brand-color--text);
 	text-decoration: none;
 }
 
