@@ -1,6 +1,7 @@
 {
 	"name": "@chealt/dashboard",
 	"version": "0.0.1",
+  "license": "MIT",
 	"scripts": {
 		"start": "wmr",
 		"build": "wmr build --prerender",
