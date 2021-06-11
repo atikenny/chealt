@@ -1,6 +1,8 @@
 const config = {
   'import/default': ['error'],
   'import/export': ['error'],
+  'import/exports-last': ['error'],
+  'import/first': ['error'],
   'import/group-exports': ['error'],
   'import/named': ['error'],
   'import/namespace': ['error'],

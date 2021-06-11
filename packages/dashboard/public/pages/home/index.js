@@ -1,7 +1,7 @@
 import styles from './style.module.css';
 import { useState } from 'preact/hooks';
 
-export default function Home() {
+const Home = () => {
   const [count, setCount] = useState(0);
 
   return (
@@ -21,4 +21,6 @@ export default function Home() {
       </section>
     </>
   );
-}
+};
+
+export default Home;

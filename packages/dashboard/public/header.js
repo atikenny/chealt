@@ -1,6 +1,6 @@
 import { useLocation } from 'preact-iso';
 
-export default function Header() {
+const Header = () => {
   const { url } = useLocation();
 
   return (
@@ -16,4 +16,6 @@ export default function Header() {
       </label>
     </header>
   );
-}
+};
+
+export default Header;
