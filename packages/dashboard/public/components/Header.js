@@ -3,7 +3,7 @@ import Link from './Link';
 const Header = () => (
   <header>
     <nav>
-      <Link href="/">Home</Link>
+      <Link href="/">Chealt</Link>
     </nav>
   </header>
 );

@@ -1,4 +1,4 @@
-import { LocationProvider, Router, Route, lazy, ErrorBoundary, hydrate, prerender as ssr } from 'preact-iso';
+import { LocationProvider, Router, Route, ErrorBoundary, hydrate, prerender as ssr } from 'preact-iso';
 import Home from './components/Home/index.js';
 import NotFound from './components/ErrorPages/_404.js';
 import Header from './components/Header.js';
