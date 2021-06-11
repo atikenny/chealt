@@ -4,7 +4,6 @@ const Header = () => (
   <header>
     <nav>
       <Link href="/">Home</Link>
-      <Link href="/about">About</Link>
       <Link href="/error">Error</Link>
     </nav>
   </header>

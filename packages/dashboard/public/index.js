@@ -3,8 +3,6 @@ import Home from './components/Home/index.js';
 import NotFound from './components/ErrorPages/_404.js';
 import Header from './components/Header.js';
 
-const About = lazy(() => import('./components/About/index.js'));
-
 const App = () => (
   <LocationProvider>
     <div class="app">
@@ -12,7 +10,6 @@ const App = () => (
       <ErrorBoundary>
         <Router>
           <Route path="/" component={Home} />
-          <Route path="/about" component={About} />
           <Route default component={NotFound} />
         </Router>
       </ErrorBoundary>
